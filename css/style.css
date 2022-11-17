@@ -1,0 +1,139 @@
+/* NORMALIZE CSS */
+@import 'normalize.css';
+
+/* HEADER CSS */
+@import 'header.css';
+
+/* HERO CSS */
+@import 'hero.css';
+
+/* COLLECTION  CSS  */
+@import 'collection.css';
+
+/* FOOTER  CSS */
+@import 'footer.css';
+
+/* WATCH  CSS  */
+@import 'watch.css';
+
+/* BRANDS CSS */
+@import 'brands.css';
+
+/* CATALOG CSS */
+@import 'catalog.css';
+
+.gen__title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.gen__title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -50px;
+}
+
+.gen__btn {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.gen__card {
+    width: 30%;
+}
+
+.gen-card__top {
+    background: #191B1C;
+    padding: 55px 22px;
+}
+
+.gen-card__img {
+    width: 100%;
+}
+
+.gen-card__title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 25px 0 10px;
+}
+
+.gen-card__price {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0D0D0;
+}
+
+@media (max-width: 1200px) {
+    .gen-card__top {
+        padding: 35px 10px;
+    }
+
+    .gen__title {
+        font-size: 32px;
+    }
+
+    .gen-card__title {
+        font-size: 16px;
+        padding: 15px 0 6px;
+    }
+
+    .gen-card__price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+    .gen__title {
+        font-size: 30px;
+    }
+
+    .gen__title::after {
+        bottom: -20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .gen-card__title {
+        font-size: 14px;
+        padding: 12px 0 5px;
+    }
+
+    .gen-card__price {
+        font-size: 13px;
+    }
+
+    .gen__title {
+        font-size: 21px;
+    }
+
+    .gen__btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+}

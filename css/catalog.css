@@ -1,0 +1,49 @@
+.catalog {
+    display: flex;
+    align-items: stretch;
+}
+
+.catalog__left {
+    width: 45%;
+    background: url(../images/catalog.png) no-repeat center / cover;
+}
+
+.catalog__right {
+    width: 55%;
+    background: #000000;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog__text {
+    width: 471px;
+    padding: 70px 0;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+    .catalog__right {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .catalog__left {
+        display: none;
+    }
+
+    .catalog__text {
+        width: 80%;
+        font-size: 18px;
+        padding: 35px 0;
+    }
+}

@@ -1,0 +1,105 @@
+.footer {
+    background: url(../images/footer\ bg.jpg) no-repeat center / cover;
+}
+
+.footer__wrapper {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer__column {
+    flex: 1 1 30%;
+    width: 100%;
+    min-width: 290px;
+}
+
+.footer__title {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.footer__link {
+    background: #0F0F0F;
+    font-size: 14px;
+    line-height: 150%;
+    color: #D0D0D0;
+    padding: 10px 20px;
+    transition: 400ms;
+}
+
+.footer__link:hover {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.footer__form {
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+}
+
+.footer__input {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.footer__input::placeholder {
+    color: #969696;
+}
+
+.footer__btn {
+    width: 40%;
+    background: #0F0F0F;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 10px 0;
+    text-align: center;
+    transition: 400ms;
+}
+
+.footer__btn:hover {
+    cursor: pointer;
+    background: #1f1f1f;
+    color: #fff;
+}
+
+
+@media (max-width: 767px) {
+
+    .footer__wrapper {
+        padding: 40px 0;
+    }
+
+    .footer__title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
